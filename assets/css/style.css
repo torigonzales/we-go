@@ -1,0 +1,8 @@
+.title {
+    font-size: 200px;
+    font-style: italic;
+}
+
+#body {
+    background: linear-gradient(70deg, black, orange,black,red, black);
+}
