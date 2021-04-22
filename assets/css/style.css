@@ -1,8 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 #body{ 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 2px;
+    padding: 5px;
     justify-content: center;
 }
 
@@ -14,7 +21,7 @@
 
 .navigation {
     border: 5px solid black;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .features {
@@ -22,10 +29,20 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-   
+    padding: none;
 }
 
 .spacing {
+    border: 5px black solid;
     padding: 10px;
-    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.poi {
+    margin-right: 5px;
+}
+
+.weather {
+    margin-left: 5px;
 }
