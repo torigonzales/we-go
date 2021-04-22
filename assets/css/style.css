@@ -1,8 +1,31 @@
-.title {
-    font-size: 200px;
-    font-style: italic;
+#body{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2px;
+    justify-content: center;
 }
 
-#body {
+.title {
+    font-size: 100px;
+    font-style: italic;
     background: linear-gradient(70deg, black, orange,black,red, black);
+}
+
+.navigation {
+    border: 5px solid black;
+    margin-right: 20px;
+}
+
+.features {
+    border: 5px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+
+.spacing {
+    padding: 10px;
+    margin: 10px;
 }
