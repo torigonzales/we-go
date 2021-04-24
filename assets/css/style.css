@@ -5,7 +5,7 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-#body{ 
+.body{ 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -37,12 +37,4 @@
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-.poi {
-    margin-right: 5px;
-}
-
-.weather {
-    margin-left: 5px;
 }
