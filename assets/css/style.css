@@ -39,10 +39,30 @@
     margin-bottom: 5px;
 }
 
+#searchForm {
+    padding: 5px;
+}
+
 .search-header {
     font-size: 26px;
 }
 
-.search {
-    font-size: 20px;
+.searchForm {
+    border-bottom: 3px solid black;
+    border-radius: 7px;
 }
+
+.search {
+    font-size: 25px;
+    border-radius: 7px;
+    border: grey 1px dotted;
+}
+
+.submit {
+    font-size: 25px;
+    background-color: cyan;
+    border-radius: 7px;
+    margin-top: 10px;
+    border: black 1px solid;
+}
+
