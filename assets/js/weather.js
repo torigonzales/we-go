@@ -21,5 +21,3 @@ fetch("https://api.weatherbit.io/v2.0/forecast/daily?&city=Salt Lake City&countr
 .catch(err => {
 	console.error(err);
 });
-
-console.log(2*2)
