@@ -5,6 +5,7 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Start styles for header */
 .body{ 
     display: flex;
     flex-wrap: wrap;
@@ -18,30 +19,9 @@
     font-style: italic;
     background: linear-gradient(70deg, black, orange,black,red, black);
 }
+/* end styles for header */
 
-.navigation {
-    border: 2px solid black;
-    margin-right: 10px;
-    border-radius: 7px;
-}
-
-.features {
-    border: 2px black solid;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: none;
-    border-radius: 7px;
-}
-
-.spacing {
-    border: 2px black solid;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 7px;
-}
-
+/* start navigation stiles */
 #searchForm {
     padding: 5px;
 }
@@ -83,3 +63,29 @@
     text-align: center;
     border-bottom: 2px solid black;
 }
+
+.navigation {
+    border: 2px solid black;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+/* End navigation styles */
+
+/* Feature box styles */
+.features {
+    border: 2px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: none;
+    border-radius: 7px;
+}
+
+.spacing {
+    border: 2px black solid;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+}
+/* End Feature box styles */
