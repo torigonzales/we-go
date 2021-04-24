@@ -1,8 +1,40 @@
-.title {
-    font-size: 200px;
-    font-style: italic;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-#body {
+.body{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: center;
+}
+
+.title {
+    font-size: 100px;
+    font-style: italic;
     background: linear-gradient(70deg, black, orange,black,red, black);
+}
+
+.navigation {
+    border: 5px solid black;
+    margin-right: 10px;
+}
+
+.features {
+    border: 5px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: none;
+}
+
+.spacing {
+    border: 5px black solid;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
