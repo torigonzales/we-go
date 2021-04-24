@@ -20,23 +20,26 @@
 }
 
 .navigation {
-    border: 5px solid black;
+    border: 2px solid black;
     margin-right: 10px;
+    border-radius: 7px;
 }
 
 .features {
-    border: 5px black solid;
+    border: 2px black solid;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     padding: none;
+    border-radius: 7px;
 }
 
 .spacing {
-    border: 5px black solid;
+    border: 2px black solid;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+    border-radius: 7px;
 }
 
 #searchForm {
@@ -45,11 +48,13 @@
 
 .search-header {
     font-size: 26px;
+    text-align: center;
 }
 
 .searchForm {
+    border-top: 3px solid black;
     border-bottom: 3px solid black;
-    border-radius: 7px;
+    border-radius: 10px;
 }
 
 .search {
@@ -63,6 +68,18 @@
     background-color: cyan;
     border-radius: 7px;
     margin-top: 10px;
-    border: black 1px solid;
+    border: black 1px none;
 }
 
+.tourism-criteria {
+    margin-top: 10px;
+    border-top: 3px solid black;
+    border-radius: 10px;
+    border-bottom: 3px solid black;
+}
+
+.tourism-options-header {
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
