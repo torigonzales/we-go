@@ -13,11 +13,16 @@ function findCity(event) {
 // this fetch searches by country or cities. Searching by country find attribute captical of country - for a map view with wiki articles and images of laction.  Searching by city will list suburbes and list out images
 fetch('https://www.triposo.com/api/20210317/location.json?part_of=' + citySearch + '&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
 
-.then(function(data) {
-  console.log(data);
-    console.log(data.json());
-    
+.then(function(response) {
+    return response.json();   
 })
+.then(function(response) {
+    console.log(response);
+    var test = response.results[1].name;
+    console.log(test);
+})
+
+
 .catch(err => {
 	console.error(err);
 });
@@ -27,11 +32,14 @@ fetch('https://www.triposo.com/api/20210317/location.json?part_of=' + citySearch
 // this fetch will find points of interest (food) locations by city name. Hard code search option values into radio buttons that will populate from the country fetch search
 fetch('https://www.triposo.com/api/20210317/poi.json?location_id=' + citySearch + '&tag_labels=eatingout&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
 
-.then(function(data) {
-  console.log(data);
-    console.log(data.json());
-    
+.then(function(response) {
+    return response.json();   
 })
+.then(function(response) {
+    console.log(response);
+
+})
+
 .catch(err => {
 	console.error(err);
 });
