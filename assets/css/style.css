@@ -52,6 +52,8 @@
 }
 
 .tourism-criteria {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
     border-top: 3px solid black;
     border-radius: 10px;
