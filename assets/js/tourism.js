@@ -19,6 +19,7 @@ fetch('https://www.triposo.com/api/20210317/location.json?part_of=' + citySearch
     return response.json();   
 })
 .then(function(response) {
+    console.log(response);
 
     // corresponds with the html tourism-criteria radio buttons
     firstRadio = document.querySelector('#one')
@@ -61,9 +62,9 @@ fetch('https://www.triposo.com/api/20210317/location.json?part_of=' + citySearch
 })
 
 
-.catch(err => {
-	console.error(err);
-});
+// .catch(err => {
+// 	console.error(err);
+// });
 
 
 
