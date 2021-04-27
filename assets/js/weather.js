@@ -1,5 +1,5 @@
 // Current weather API pull with minutely data
-fetch("https://api.weatherbit.io/v2.0/current?&city=Salt Lake City&country=US&key=605fec257fb24bfc849577002a714395&include=minutely")
+fetch("https://api.weatherbit.io/v2.0/current?&city=Amsterdam&country=US&key=605fec257fb24bfc849577002a714395&include=minutely")
 
 .then(function(data) {
   console.log(data);
@@ -21,5 +21,3 @@ fetch("https://api.weatherbit.io/v2.0/forecast/daily?&city=Salt Lake City&countr
 .catch(err => {
 	console.error(err);
 });
-
-console.log(2*2)
