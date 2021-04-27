@@ -58,7 +58,17 @@ fetch('https://www.triposo.com/api/20210317/location.json?part_of=' + citySearch
 
     tenthRadio = document.querySelector('#ten')
     tenthRadio.textContent = response.results[9].name;
-    
+
+    var alpha = document.querySelector('.test-one')
+    var imageOne = response.results[0].images[5].source_url;
+    console.log(imageOne);
+    alpha.setAttribute('src', imageOne);
+
+    var bravo = document.querySelector('.test-two')
+    var imageTwo = response.results[1].images[5].source_url;
+    console.log(imageTwo);
+    bravo.setAttribute('src', imageTwo);
+
 })
 
 
