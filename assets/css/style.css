@@ -12,6 +12,9 @@
     flex-direction: row;
     padding: 5px;
     justify-content: center;
+    background: rgb(250, 235, 224);
+    
+    
 }
 
 .title {
@@ -42,6 +45,7 @@
     font-size: 25px;
     border-radius: 7px;
     border: grey 1px dotted;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
 
 .submit {
@@ -50,6 +54,7 @@
     border-radius: 7px;
     margin-top: 10px;
     border: black 1px none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
 
 .tourism-criteria {
@@ -71,6 +76,7 @@
     border: 2px solid black;
     margin-right: 10px;
     border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
 /* End navigation styles */
 
@@ -82,6 +88,7 @@
     flex-direction: row;
     padding: none;
     border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
 
 .spacing {
@@ -92,3 +99,11 @@
     border-radius: 7px;
 }
 /* End Feature box styles */
+
+.tour-header {
+    text-align: center;
+    Font-size: 50px;
+    color: black;
+    font: bold;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+}
