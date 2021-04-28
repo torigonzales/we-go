@@ -21,8 +21,8 @@ function findCity(event) {
     .then(function(response) {
         console.log(response);
         
-    // Country search, City images
-        // First City, Title and image
+    // Country search, Cities, points of interest images
+        // First City, Points of interest and image
         var cityOneName = document.querySelector('#city-one-name')
         var cityOneResponseName = response.results[0].name;
         cityOneName.textContent = cityOneResponseName;
@@ -35,7 +35,7 @@ function findCity(event) {
         var cityOneResponsePhoto = response.results[0].images[0].source_url;
         cityOneImagePhoto.setAttribute('src', cityOneResponsePhoto);
         
-        // Second City, Title and image
+        // Second City, Points of interest and image
         var cityTwoName = document.querySelector('#city-two-name')
         var cityTwoResponseName = response.results[1].name;
         cityTwoName.textContent = cityTwoResponseName;
@@ -48,7 +48,7 @@ function findCity(event) {
         var cityTwoResponsePhoto = response.results[1].images[0].source_url;
         cityTwoImagePhoto.setAttribute('src', cityTwoResponsePhoto);
 
-        // Third City, Title and image
+        // Third City, Points of interest and image
         var cityThreeName = document.querySelector('#city-three-name')
         var cityThreeResponseName = response.results[2].name;
         cityThreeName.textContent = cityThreeResponseName;
@@ -61,7 +61,7 @@ function findCity(event) {
         var cityThreeResponsePhoto = response.results[2].images[0].source_url;
         cityThreeImagePhoto.setAttribute('src', cityThreeResponsePhoto);
 
-        // Forth City, Title and image
+        // Forth City, Points of interest and image
         var cityFourName = document.querySelector('#city-four-name')
         var cityFourResponseName = response.results[3].name;
         cityFourName.textContent = cityFourResponseName;
@@ -74,7 +74,7 @@ function findCity(event) {
         var cityFourResponsePhoto = response.results[3].images[0].source_url;
         cityFourImagePhoto.setAttribute('src', cityFourResponsePhoto);
 
-        // Fifth City, Title and image
+        // Fifth City, Points of interest and image
         var cityFiveName = document.querySelector('#city-five-name')
         var cityFiveResponseName = response.results[4].name;
         cityFiveName.textContent = cityFiveResponseName;
@@ -87,7 +87,7 @@ function findCity(event) {
         var cityFiveResponsePhoto = response.results[4].images[0].source_url;
         cityFiveImagePhoto.setAttribute('src', cityFiveResponsePhoto);
 
-        // Sixth City, Title and image
+        // Sixth City, Points of interest and image
         var citySixName = document.querySelector('#city-six-name')
         var citySixResponseName = response.results[5].name;
         citySixName.textContent = citySixResponseName;
@@ -100,7 +100,7 @@ function findCity(event) {
         var citySixResponsePhoto = response.results[5].images[0].source_url;
         citySixImagePhoto.setAttribute('src', citySixResponsePhoto);
 
-        // Seventh City, Title and image
+        // Seventh City, Points of interest and image
         var citySevenName = document.querySelector('#city-seven-name')
         var citySevenResponseName = response.results[6].name;
         citySevenName.textContent = citySevenResponseName;
@@ -113,7 +113,7 @@ function findCity(event) {
         var citySevenResponsePhoto = response.results[6].images[0].source_url;
         citySevenImagePhoto.setAttribute('src', citySevenResponsePhoto);
 
-        // Eighth City, Title and image
+        // Eighth City, Points of interest and image
         var cityEightName = document.querySelector('#city-eight-name')
         var cityEightResponseName = response.results[7].name;
         cityEightName.textContent = cityEightResponseName;
@@ -126,7 +126,7 @@ function findCity(event) {
         var cityEightResponsePhoto = response.results[7].images[0].source_url;
         cityEightImagePhoto.setAttribute('src', cityEightResponsePhoto);
 
-        // Nineth City, Title and image
+        // Nineth City, Points of interest and image
         var cityNineName = document.querySelector('#city-nine-name')
         var cityNineResponseName = response.results[8].name;
         cityNineName.textContent = cityNineResponseName;
@@ -139,7 +139,7 @@ function findCity(event) {
         var cityNineResponsePhoto = response.results[8].images[0].source_url;
         cityNineImagePhoto.setAttribute('src', cityNineResponsePhoto);
 
-        // Tenth City, Title and image
+        // Tenth City, Title, Points of interest and image
         var cityTenName = document.querySelector('#city-ten-name')
         var cityTenResponseName = response.results[9].name;
         cityTenName.textContent = cityTenResponseName;
@@ -155,41 +155,41 @@ function findCity(event) {
 
     // corresponds with the html tourism-criteria radio buttons
         firstRadio = document.querySelector('#one')
-        firstRadio.textContent = response.results[0].name;
+        firstRadio.textContent = response.results[0].id;
         
 
         secondRadio = document.querySelector('#two')
-        secondRadio.textContent = response.results[1].name;
+        secondRadio.textContent = response.results[1].id;
         
 
-        thirdRadio = document.querySelector('#three')
-        thirdRadio.textContent = response.results[2].name;
+        // thirdRadio = document.querySelector('#three')
+        // thirdRadio.textContent = response.results[2].name;
         
 
-        forthRadio = document.querySelector('#four')
-        forthRadio.textContent = response.results[3].name;
+        // forthRadio = document.querySelector('#four')
+        // forthRadio.textContent = response.results[3].name;
 
-        fifthRadio = document.querySelector('#five')
-        fifthRadio.textContent = response.results[4].name;
+        // fifthRadio = document.querySelector('#five')
+        // fifthRadio.textContent = response.results[4].name;
         
 
-        sixthRadio = document.querySelector('#six')
-        sixthRadio.textContent = response.results[5].name;
+        // sixthRadio = document.querySelector('#six')
+        // sixthRadio.textContent = response.results[5].name;
         
 
-        seventhRadio = document.querySelector('#seven')
-        seventhRadio.textContent = response.results[6].name;
+        // seventhRadio = document.querySelector('#seven')
+        // seventhRadio.textContent = response.results[6].name;
         
 
-        eighthRadio = document.querySelector('#eight')
-        eighthRadio.textContent = response.results[7].name;
+        // eighthRadio = document.querySelector('#eight')
+        // eighthRadio.textContent = response.results[7].name;
 
-        ninthRadio = document.querySelector('#nine')
-        ninthRadio.textContent = response.results[8].name;
+        // ninthRadio = document.querySelector('#nine')
+        // ninthRadio.textContent = response.results[8].name;
         
 
-        tenthRadio = document.querySelector('#ten')
-        tenthRadio.textContent = response.results[9].name;
+        // tenthRadio = document.querySelector('#ten')
+        // tenthRadio.textContent = response.results[9].name;
 
 
 
@@ -203,19 +203,19 @@ function findCity(event) {
 
 
     // this fetch will find points of interest (food) locations by city name. Hard code search option values into radio buttons that will populate from the country fetch search
-    // fetch('https://www.triposo.com/api/20210317/poi.json?location_id=' + citySearch + '&tag_labels=eatingout&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
+    fetch('https://www.triposo.com/api/20210317/poi.json?location_id=' + citySearch + '&tag_labels=eatingout&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
 
-    // .then(function(response) {
-    //     return response.json();   
-    // })
-    // .then(function(response) {
-    //     console.log(response);
+    .then(function(response) {
+        return response.json();   
+    })
+    .then(function(response) {
+        console.log(response);
 
-    // })
+    })
 
-    // .catch(err => {
-    //     console.error(err);
-    // });
+    .catch(err => {
+        console.error(err);
+    });
 
 };
 
