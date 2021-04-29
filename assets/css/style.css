@@ -105,3 +105,8 @@
     font: bold;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
+
+.food {
+    display: flex;
+    flex-direction: row;
+}

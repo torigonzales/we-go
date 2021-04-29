@@ -15,185 +15,185 @@ function findCity(event) {
 
 
 
-    .then(function(response) {
-        return response.json();   
-    })
-    .then(function(response) {
-        console.log(response);
-        
-    // Country search, Cities, points of interest images
-        // First City, Points of interest and image
-        var cityOneName = document.querySelector('#city-one-name')
-        var cityOneResponseName = response.results[0].name;
-        cityOneName.textContent = cityOneResponseName;
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (response) {
+            console.log(response);
 
-        var cityOneImageTitle = document.querySelector('#city-one-image-title')
-        var cityOneKnowFor = response.results[0].snippet;
-        cityOneImageTitle.textContent = cityOneKnowFor;
+            // Country search, Cities, points of interest images
+            // First City, Points of interest and image
+            var cityOneName = document.querySelector('#city-one-name')
+            var cityOneResponseName = response.results[0].name;
+            cityOneName.textContent = cityOneResponseName;
 
-        var cityOneImagePhoto = document.querySelector('.city-one-image')
-        var cityOneResponsePhoto = response.results[0].images[0].source_url;
-        cityOneImagePhoto.setAttribute('src', cityOneResponsePhoto);
-        
-        // Second City, Points of interest and image
-        var cityTwoName = document.querySelector('#city-two-name')
-        var cityTwoResponseName = response.results[1].name;
-        cityTwoName.textContent = cityTwoResponseName;
+            var cityOneImageTitle = document.querySelector('#city-one-image-title')
+            var cityOneKnowFor = response.results[0].snippet;
+            cityOneImageTitle.textContent = cityOneKnowFor;
 
-        var cityTwoImageTitle = document.querySelector('#city-two-image-title')
-        var cityTwoKnowFor = response.results[1].snippet;
-        cityTwoImageTitle.textContent = cityTwoKnowFor;
+            var cityOneImagePhoto = document.querySelector('.city-one-image')
+            var cityOneResponsePhoto = response.results[0].images[0].source_url;
+            cityOneImagePhoto.setAttribute('src', cityOneResponsePhoto);
 
-        var cityTwoImagePhoto = document.querySelector('.city-two-image')
-        var cityTwoResponsePhoto = response.results[1].images[0].source_url;
-        cityTwoImagePhoto.setAttribute('src', cityTwoResponsePhoto);
+            // Second City, Points of interest and image
+            var cityTwoName = document.querySelector('#city-two-name')
+            var cityTwoResponseName = response.results[1].name;
+            cityTwoName.textContent = cityTwoResponseName;
 
-        // Third City, Points of interest and image
-        var cityThreeName = document.querySelector('#city-three-name')
-        var cityThreeResponseName = response.results[2].name;
-        cityThreeName.textContent = cityThreeResponseName;
+            var cityTwoImageTitle = document.querySelector('#city-two-image-title')
+            var cityTwoKnowFor = response.results[1].snippet;
+            cityTwoImageTitle.textContent = cityTwoKnowFor;
 
-        var cityThreeImageTitle = document.querySelector('#city-three-image-title')
-        var cityThreeKnowFor = response.results[2].snippet;
-        cityThreeImageTitle.textContent = cityThreeKnowFor;
+            var cityTwoImagePhoto = document.querySelector('.city-two-image')
+            var cityTwoResponsePhoto = response.results[1].images[0].source_url;
+            cityTwoImagePhoto.setAttribute('src', cityTwoResponsePhoto);
 
-        var cityThreeImagePhoto = document.querySelector('.city-three-image')
-        var cityThreeResponsePhoto = response.results[2].images[0].source_url;
-        cityThreeImagePhoto.setAttribute('src', cityThreeResponsePhoto);
+            // Third City, Points of interest and image
+            var cityThreeName = document.querySelector('#city-three-name')
+            var cityThreeResponseName = response.results[2].name;
+            cityThreeName.textContent = cityThreeResponseName;
 
-        // Forth City, Points of interest and image
-        var cityFourName = document.querySelector('#city-four-name')
-        var cityFourResponseName = response.results[3].name;
-        cityFourName.textContent = cityFourResponseName;
+            var cityThreeImageTitle = document.querySelector('#city-three-image-title')
+            var cityThreeKnowFor = response.results[2].snippet;
+            cityThreeImageTitle.textContent = cityThreeKnowFor;
 
-        var cityFourImageTitle = document.querySelector('#city-four-image-title')
-        var cityFourKnowFor = response.results[3].snippet;
-        cityFourImageTitle.textContent = cityFourKnowFor;
+            var cityThreeImagePhoto = document.querySelector('.city-three-image')
+            var cityThreeResponsePhoto = response.results[2].images[0].source_url;
+            cityThreeImagePhoto.setAttribute('src', cityThreeResponsePhoto);
 
-        var cityFourImagePhoto = document.querySelector('.city-four-image')
-        var cityFourResponsePhoto = response.results[3].images[0].source_url;
-        cityFourImagePhoto.setAttribute('src', cityFourResponsePhoto);
+            // Forth City, Points of interest and image
+            var cityFourName = document.querySelector('#city-four-name')
+            var cityFourResponseName = response.results[3].name;
+            cityFourName.textContent = cityFourResponseName;
 
-        // Fifth City, Points of interest and image
-        var cityFiveName = document.querySelector('#city-five-name')
-        var cityFiveResponseName = response.results[4].name;
-        cityFiveName.textContent = cityFiveResponseName;
+            var cityFourImageTitle = document.querySelector('#city-four-image-title')
+            var cityFourKnowFor = response.results[3].snippet;
+            cityFourImageTitle.textContent = cityFourKnowFor;
 
-        var cityFiveImageTitle = document.querySelector('#city-five-image-title')
-        var cityFiveKnowFor = response.results[4].snippet;
-        cityFiveImageTitle.textContent = cityFiveKnowFor;
+            var cityFourImagePhoto = document.querySelector('.city-four-image')
+            var cityFourResponsePhoto = response.results[3].images[0].source_url;
+            cityFourImagePhoto.setAttribute('src', cityFourResponsePhoto);
 
-        var cityFiveImagePhoto = document.querySelector('.city-five-image')
-        var cityFiveResponsePhoto = response.results[4].images[0].source_url;
-        cityFiveImagePhoto.setAttribute('src', cityFiveResponsePhoto);
+            // Fifth City, Points of interest and image
+            var cityFiveName = document.querySelector('#city-five-name')
+            var cityFiveResponseName = response.results[4].name;
+            cityFiveName.textContent = cityFiveResponseName;
 
-        // Sixth City, Points of interest and image
-        var citySixName = document.querySelector('#city-six-name')
-        var citySixResponseName = response.results[5].name;
-        citySixName.textContent = citySixResponseName;
+            var cityFiveImageTitle = document.querySelector('#city-five-image-title')
+            var cityFiveKnowFor = response.results[4].snippet;
+            cityFiveImageTitle.textContent = cityFiveKnowFor;
 
-        var citySixImageTitle = document.querySelector('#city-six-image-title')
-        var citySixKnowFor = response.results[5].snippet;
-        citySixImageTitle.textContent = citySixKnowFor;
+            var cityFiveImagePhoto = document.querySelector('.city-five-image')
+            var cityFiveResponsePhoto = response.results[4].images[0].source_url;
+            cityFiveImagePhoto.setAttribute('src', cityFiveResponsePhoto);
 
-        var citySixImagePhoto = document.querySelector('.city-six-image')
-        var citySixResponsePhoto = response.results[5].images[0].source_url;
-        citySixImagePhoto.setAttribute('src', citySixResponsePhoto);
+            // Sixth City, Points of interest and image
+            var citySixName = document.querySelector('#city-six-name')
+            var citySixResponseName = response.results[5].name;
+            citySixName.textContent = citySixResponseName;
 
-        // Seventh City, Points of interest and image
-        var citySevenName = document.querySelector('#city-seven-name')
-        var citySevenResponseName = response.results[6].name;
-        citySevenName.textContent = citySevenResponseName;
+            var citySixImageTitle = document.querySelector('#city-six-image-title')
+            var citySixKnowFor = response.results[5].snippet;
+            citySixImageTitle.textContent = citySixKnowFor;
 
-        var citySevenImageTitle = document.querySelector('#city-seven-image-title')
-        var citySevenKnowFor = response.results[6].snippet;
-        citySevenImageTitle.textContent = citySevenKnowFor;
+            var citySixImagePhoto = document.querySelector('.city-six-image')
+            var citySixResponsePhoto = response.results[5].images[0].source_url;
+            citySixImagePhoto.setAttribute('src', citySixResponsePhoto);
 
-        var citySevenImagePhoto = document.querySelector('.city-seven-image')
-        var citySevenResponsePhoto = response.results[6].images[0].source_url;
-        citySevenImagePhoto.setAttribute('src', citySevenResponsePhoto);
+            // Seventh City, Points of interest and image
+            var citySevenName = document.querySelector('#city-seven-name')
+            var citySevenResponseName = response.results[6].name;
+            citySevenName.textContent = citySevenResponseName;
 
-        // Eighth City, Points of interest and image
-        var cityEightName = document.querySelector('#city-eight-name')
-        var cityEightResponseName = response.results[7].name;
-        cityEightName.textContent = cityEightResponseName;
+            var citySevenImageTitle = document.querySelector('#city-seven-image-title')
+            var citySevenKnowFor = response.results[6].snippet;
+            citySevenImageTitle.textContent = citySevenKnowFor;
 
-        var cityEightImageTitle = document.querySelector('#city-eight-image-title')
-        var cityEightKnowFor = response.results[7].snippet;
-        cityEightImageTitle.textContent = cityEightKnowFor;
+            var citySevenImagePhoto = document.querySelector('.city-seven-image')
+            var citySevenResponsePhoto = response.results[6].images[0].source_url;
+            citySevenImagePhoto.setAttribute('src', citySevenResponsePhoto);
 
-        var cityEightImagePhoto = document.querySelector('.city-eight-image')
-        var cityEightResponsePhoto = response.results[7].images[0].source_url;
-        cityEightImagePhoto.setAttribute('src', cityEightResponsePhoto);
+            // Eighth City, Points of interest and image
+            var cityEightName = document.querySelector('#city-eight-name')
+            var cityEightResponseName = response.results[7].name;
+            cityEightName.textContent = cityEightResponseName;
 
-        // Nineth City, Points of interest and image
-        var cityNineName = document.querySelector('#city-nine-name')
-        var cityNineResponseName = response.results[8].name;
-        cityNineName.textContent = cityNineResponseName;
+            var cityEightImageTitle = document.querySelector('#city-eight-image-title')
+            var cityEightKnowFor = response.results[7].snippet;
+            cityEightImageTitle.textContent = cityEightKnowFor;
 
-        var cityNineImageTitle = document.querySelector('#city-nine-image-title')
-        var cityNineKnowFor = response.results[8].snippet;
-        cityNineImageTitle.textContent = cityNineKnowFor;
+            var cityEightImagePhoto = document.querySelector('.city-eight-image')
+            var cityEightResponsePhoto = response.results[7].images[0].source_url;
+            cityEightImagePhoto.setAttribute('src', cityEightResponsePhoto);
 
-        var cityNineImagePhoto = document.querySelector('.city-nine-image')
-        var cityNineResponsePhoto = response.results[8].images[0].source_url;
-        cityNineImagePhoto.setAttribute('src', cityNineResponsePhoto);
+            // Nineth City, Points of interest and image
+            var cityNineName = document.querySelector('#city-nine-name')
+            var cityNineResponseName = response.results[8].name;
+            cityNineName.textContent = cityNineResponseName;
 
-        // Tenth City, Title, Points of interest and image
-        var cityTenName = document.querySelector('#city-ten-name')
-        var cityTenResponseName = response.results[9].name;
-        cityTenName.textContent = cityTenResponseName;
+            var cityNineImageTitle = document.querySelector('#city-nine-image-title')
+            var cityNineKnowFor = response.results[8].snippet;
+            cityNineImageTitle.textContent = cityNineKnowFor;
 
-        var cityTenImageTitle = document.querySelector('#city-ten-image-title')
-        var cityTenKnowFor = response.results[9].snippet;
-        cityTenImageTitle.textContent = cityTenKnowFor;
+            var cityNineImagePhoto = document.querySelector('.city-nine-image')
+            var cityNineResponsePhoto = response.results[8].images[0].source_url;
+            cityNineImagePhoto.setAttribute('src', cityNineResponsePhoto);
 
-        var cityTenImagePhoto = document.querySelector('.city-ten-image')
-        var cityTenResponsePhoto = response.results[9].images[0].source_url;
-        cityTenImagePhoto.setAttribute('src', cityTenResponsePhoto);
+            // Tenth City, Title, Points of interest and image
+            var cityTenName = document.querySelector('#city-ten-name')
+            var cityTenResponseName = response.results[9].name;
+            cityTenName.textContent = cityTenResponseName;
 
+            var cityTenImageTitle = document.querySelector('#city-ten-image-title')
+            var cityTenKnowFor = response.results[9].snippet;
+            cityTenImageTitle.textContent = cityTenKnowFor;
 
-    // corresponds with the html tourism-criteria radio buttons
-        firstRadio = document.querySelector('#one')
-        firstRadio.textContent = response.results[0].id;
-        
-
-        secondRadio = document.querySelector('#two')
-        secondRadio.textContent = response.results[1].id;
-        
-
-        // thirdRadio = document.querySelector('#three')
-        // thirdRadio.textContent = response.results[2].name;
-        
-
-        // forthRadio = document.querySelector('#four')
-        // forthRadio.textContent = response.results[3].name;
-
-        // fifthRadio = document.querySelector('#five')
-        // fifthRadio.textContent = response.results[4].name;
-        
-
-        // sixthRadio = document.querySelector('#six')
-        // sixthRadio.textContent = response.results[5].name;
-        
-
-        // seventhRadio = document.querySelector('#seven')
-        // seventhRadio.textContent = response.results[6].name;
-        
-
-        // eighthRadio = document.querySelector('#eight')
-        // eighthRadio.textContent = response.results[7].name;
-
-        // ninthRadio = document.querySelector('#nine')
-        // ninthRadio.textContent = response.results[8].name;
-        
-
-        // tenthRadio = document.querySelector('#ten')
-        // tenthRadio.textContent = response.results[9].name;
+            var cityTenImagePhoto = document.querySelector('.city-ten-image')
+            var cityTenResponsePhoto = response.results[9].images[0].source_url;
+            cityTenImagePhoto.setAttribute('src', cityTenResponsePhoto);
 
 
+            // corresponds with the html tourism-criteria radio buttons
+            firstRadio = document.querySelector('#one')
+            firstRadio.textContent = response.results[0].id;
 
-    })
+
+            secondRadio = document.querySelector('#two')
+            secondRadio.textContent = response.results[1].id;
+
+
+            // thirdRadio = document.querySelector('#three')
+            // thirdRadio.textContent = response.results[2].name;
+
+
+            // forthRadio = document.querySelector('#four')
+            // forthRadio.textContent = response.results[3].name;
+
+            // fifthRadio = document.querySelector('#five')
+            // fifthRadio.textContent = response.results[4].name;
+
+
+            // sixthRadio = document.querySelector('#six')
+            // sixthRadio.textContent = response.results[5].name;
+
+
+            // seventhRadio = document.querySelector('#seven')
+            // seventhRadio.textContent = response.results[6].name;
+
+
+            // eighthRadio = document.querySelector('#eight')
+            // eighthRadio.textContent = response.results[7].name;
+
+            // ninthRadio = document.querySelector('#nine')
+            // ninthRadio.textContent = response.results[8].name;
+
+
+            // tenthRadio = document.querySelector('#ten')
+            // tenthRadio.textContent = response.results[9].name;
+
+
+
+        })
 
 
     // .catch(err => {
@@ -202,32 +202,111 @@ function findCity(event) {
 
 
 
-    // this fetch will find points of interest (food) locations by city name. Hard code search option values into radio buttons that will populate from the country fetch search
-    fetch('https://www.triposo.com/api/20210317/poi.json?location_id=' + citySearch + '&tag_labels=eatingout&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
 
-    .then(function(response) {
-        return response.json();   
-    })
-    .then(function(response) {
-        console.log(response);
 
-    })
-
-    .catch(err => {
-        console.error(err);
-    });
+    // .catch(err => {
+    //     console.error(err);
+    // });
 
 };
 
 
 
 
+// fetch('https://www.triposo.com/api/20210317/poi.json?location_id=' + citySearch + '&tag_labels=eatingout&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
 
 
 
 
 
 
+// this fetch will find points of interest (food) locations by city name. Hard code search option values into radio buttons that will populate from the country fetch search
+fetch('https://www.triposo.com/api/20210317/poi.json?location_id=Amsterdam&tag_labels=eatingout&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
+
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (response) {
+        console.log(response);
+
+        //Food one
+        var foodOneName = document.querySelector('#food-one-name')
+        var foodOneResponseName = response.results[0].name;
+        foodOneName.textContent = foodOneResponseName;
+
+        var foodOneImageTitle = document.querySelector('#food-one-image-title')
+        var foodOneKnowFor = response.results[0].snippet;
+        foodOneImageTitle.textContent = foodOneKnowFor;
+
+        var foodOneImagePhoto = document.querySelector('.food-one-image')
+        var foodOneResponsePhoto = response.results[0].images[0].source_url;
+        foodOneImagePhoto.setAttribute('src', foodOneResponsePhoto)
+
+        //Food two
+        var foodTwoName = document.querySelector('#food-two-name')
+        var foodTwoResponseName = response.results[1].name;
+        foodTwoName.textContent = foodTwoResponseName;
+
+        var foodTwoImageTitle = document.querySelector('#food-two-image-title')
+        var foodTwoKnowFor = response.results[1].snippet;
+        foodTwoImageTitle.textContent = foodTwoKnowFor;
+
+        var foodTwoImagePhoto = document.querySelector('.food-two-image')
+        var foodTwoResponsePhoto = response.results[1].images[0].source_url;
+        foodTwoImagePhoto.setAttribute('src', foodTwoResponsePhoto)
+
+        //Food three
+        var foodThreeName = document.querySelector('#food-three-name')
+        var foodThreeResponseName = response.results[2].name;
+        foodThreeName.textContent = foodThreeResponseName;
+
+        var foodThreeImageTitle = document.querySelector('#food-three-image-title')
+        var foodThreeKnowFor = response.results[2].snippet;
+        foodThreeImageTitle.textContent = foodThreeKnowFor;
+
+        var foodThreeImagePhoto = document.querySelector('.food-three-image')
+        var foodThreeResponsePhoto = response.results[2].images[0].source_url;
+        foodThreeImagePhoto.setAttribute('src', foodThreeResponsePhoto)
+
+        //Food four
+        var foodFourName = document.querySelector('#food-four-name')
+        var foodFourResponseName = response.results[3].name;
+        foodFourName.textContent = foodFourResponseName;
+
+        var foodFourImageTitle = document.querySelector('#food-four-image-title')
+        var foodFourKnowFor = response.results[3].snippet;
+        foodFourImageTitle.textContent = foodFourKnowFor;
+
+        var foodFourImagePhoto = document.querySelector('.food-four-image')
+        var foodFourResponsePhoto = response.results[3].images[0].source_url;
+        foodFourImagePhoto.setAttribute('src', foodFourResponsePhoto)
+
+        //Food five
+        var foodFiveName = document.querySelector('#food-five-name')
+        var foodFiveResponseName = response.results[4].name;
+        foodFiveName.textContent = foodFiveResponseName;
+
+        var foodFiveImageTitle = document.querySelector('#food-five-image-title')
+        var foodFiveKnowFor = response.results[4].snippet;
+        foodFiveImageTitle.textContent = foodFiveKnowFor;
+
+        var foodFiveImagePhoto = document.querySelector('.food-five-image')
+        var foodFiveResponsePhoto = response.results[4].images[0].source_url;
+        foodFiveImagePhoto.setAttribute('src', foodFiveResponsePhoto)
+
+        //Food six
+        var foodSixName = document.querySelector('#food-six-name')
+        var foodSixResponseName = response.results[5].name;
+        foodSixName.textContent = foodSixResponseName;
+
+        var foodSixImageTitle = document.querySelector('#food-six-image-title')
+        var foodSixKnowFor = response.results[5].snippet;
+        foodSixImageTitle.textContent = foodSixKnowFor;
+
+        var foodSixImagePhoto = document.querySelector('.food-six-image')
+        var foodSixResponsePhoto = response.results[5].images[0].source_url;
+        foodSixImagePhoto.setAttribute('src', foodSixResponsePhoto)
+    })
 
 
 
