@@ -22,7 +22,21 @@
 
     <!-- Search form and submit botton -->
     <form class="searchForm column is-full">
-    <input id="search" class="search column is-full" placeholder="Enter Destination"></input>
+
+    <select id="search" class="search column is-full" placeholder="Enter Destination">
+      <option>Select a Country</option>
+      <option value="Brazil">Brazil</option>
+      <option value="Egypt">Egypt</option>
+      <option value="France">France</option>
+      <option value="Germany">Germany</option>
+      <option value="Iraq">Iraq</option>
+      <option value="Lebanon">Lebanon</option>
+      <option value="London">London</option>
+      <option value="Netherlands">Netherlands</option>
+      <option value="Poland">Ploand</option>
+      <option value="Turkey">Turkey</option>
+
+    </select>
     <button class="submit column is-full submitBtn">
       <text>Begin Your Search</text>
     </button>
@@ -31,7 +45,7 @@
     <!-- section for criteria options for tourism search features -->
     <div class="column is-full tourism-criteria">
       <h1 class="tourism-options-header column is-full">Select Your Criteria!</h1>
-        <div class="column is-12 body">
+        <div class="column is-12 body city-buttons">
           <button id="one" class="column is-half">button</button>
 
           <button id="two" class="column is-half">button</button>
@@ -60,7 +74,7 @@
   <!-- API features sections to unload content into the webpage -->
   <section class="features column">
     <!-- Country info links and images -->
-    <aside class="features spacing tourism column is-full">
+    <aside class="features spacing tourism column is-full city-buttons">
 
       <div class="column is-one-fifth">
         <h1 id="city-one-name"></h1>
@@ -124,8 +138,57 @@
 
     </aside>
 
+<!-- City points of interest -->
     <aside class="features spacing tourism column is-full">
-      
+      <div class="column is-one-fifth">
+        <h1 id="first-poi-caption"></h1>
+        <img class="first-poi-image"/>
+      </div>
+
+      <div class="column is-one-fifth">
+        <h1 id="second-poi-caption"></h1>
+        <img class="second-poi-image"/>
+      </div>
+
+      <div class="column is-one-fifth">
+        <h1 id="third-poi-caption"></h1>
+        <img class="third-poi-image"/>
+      </div>
+
+      <div class="column is-one-fifth">
+        <h1 id="fourth-poi-caption"></h1>
+        <img class="fourth-poi-image"/>
+      </div>
+
+      <div class="column is-one-fifth">
+        <h1 id="fifth-poi-caption"></h1>
+        <img class="fifth-poi-image"/>
+      </div>
+
+      <div class="column is-one-fifth">
+        <h1 id="sixth-poi-caption"></h1>
+        <img class="sixth-poi-image"/>
+      </div>
+
+      <div class="column is-one-fifth">
+        <h1 id="seventh-poi-caption"></h1>
+        <img class="seventh-poi-image"/>
+      </div>
+
+      <div class="column is-one-fifth">
+        <h1 id="eighth-poi-caption"></h1>
+        <img class="eighth-poi-image"/>
+      </div>
+
+      <div class="column is-one-fifth">
+        <h1 id="ninth-poi-caption"></h1>
+        <img class="ninth-poi-image"/>
+      </div>
+
+      <div class="column is-one-fifth">
+        <h1 id="tenth-poi-caption"></h1>
+        <img class="tenth-poi-image"/>
+      </div>
     </aside>
 
 

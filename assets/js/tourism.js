@@ -1,5 +1,16 @@
 
 var submitBtn = document.querySelector('.submit');
+var cityOnePoi = document.querySelector('#one');
+var cityTwoPoi = document.querySelector('#two');
+var cityThreePoi = document.querySelector('#three');
+var cityFourPoi = document.querySelector('#four');
+var cityFivePoi = document.querySelector('#five');
+var citySixPoi = document.querySelector('#six');
+var citySevenPoi = document.querySelector('#seven');
+var cityeightPoi = document.querySelector('#eight');
+var cityNinePoi = document.querySelector('#nine');
+var cityTenPoi = document.querySelector('#ten');
+
 
 // this creates a variable and states that this is an array for storying multiple values, strings or objects
 var findCountry = []
@@ -28,10 +39,6 @@ function findCity(event) {
     console.log(both)
     console.log(ninth + tenth)
     
-
-
-
-    // This is the re-array if select indexes from last to count down position
     localStorage.setItem('Key', JSON.stringify(both));
 
     // this fetch searches by country or cities. Searching by country find attribute captical of country - for a map view with wiki articles and images of laction.  Searching by city will list suburbes and list out images
@@ -178,45 +185,362 @@ function findCity(event) {
 
 
     // corresponds with the html tourism-criteria radio buttons
-        firstRadio = document.querySelector('#one')
-        firstRadio.textContent = response.results[0].id;
+        firstCityButton = document.querySelector('#one')
+        firstCityButton.textContent = response.results[0].id;
         
 
-        secondRadio = document.querySelector('#two')
-        secondRadio.textContent = response.results[1].id;
+        secondCityButton = document.querySelector('#two')
+        secondCityButton.textContent = response.results[1].id;
         
 
-        thirdRadio = document.querySelector('#three')
-        thirdRadio.textContent = response.results[2].name;
+        thirdCityButton = document.querySelector('#three')
+        thirdCityButton.textContent = response.results[2].name;
         
 
-        forthRadio = document.querySelector('#four')
-        forthRadio.textContent = response.results[3].name;
+        forthCityButton = document.querySelector('#four')
+        forthCityButton.textContent = response.results[3].name;
 
-        fifthRadio = document.querySelector('#five')
-        fifthRadio.textContent = response.results[4].name;
+        fifthCityButton = document.querySelector('#five')
+        fifthCityButton.textContent = response.results[4].name;
         
 
-        sixthRadio = document.querySelector('#six')
-        sixthRadio.textContent = response.results[5].name;
+        sixthCityButton = document.querySelector('#six')
+        sixthCityButton.textContent = response.results[5].name;
         
 
-        seventhRadio = document.querySelector('#seven')
-        seventhRadio.textContent = response.results[6].name;
+        seventhCityButton = document.querySelector('#seven')
+        seventhCityButton.textContent = response.results[6].name;
         
 
-        eighthRadio = document.querySelector('#eight')
-        eighthRadio.textContent = response.results[7].name;
+        eighthCityButton = document.querySelector('#eight')
+        eighthCityButton.textContent = response.results[7].name;
 
-        ninthRadio = document.querySelector('#nine')
-        ninthRadio.textContent = response.results[8].name;
+        ninthCityButton = document.querySelector('#nine')
+        ninthCityButton.textContent = response.results[8].name;
         
 
-        tenthRadio = document.querySelector('#ten')
-        tenthRadio.textContent = response.results[9].name;
+        tenthCityButton = document.querySelector('#ten')
+        tenthCityButton.textContent = response.results[9].name;
+        
+        
+// First city function button fetcth reponse and append to webpage
+        cityOnePoi.addEventListener('click', function(){
+            // City, First Point of interest    
+            var cityOnePoi = document.querySelector('#first-poi-caption')
+            var cityOnePoiResponse = response.results[0].images[0].caption;
+            cityOnePoi.textContent = cityOnePoiResponse;
+    
+            var cityOnePoiImage = document.querySelector('.first-poi-image')
+            var cityOnePoiImageResponse = response.results[0].images[0].source_url;
+            cityOnePoiImage.setAttribute('src', cityOnePoiImageResponse);
+            
+
+            // City, Second Point of interest    
+            var cityTwoPoi = document.querySelector('#second-poi-caption')
+            var cityTwoPoiResponse = response.results[0].images[1].caption;
+            cityTwoPoi.textContent = cityTwoPoiResponse;
+    
+            var cityTwoPoiImage = document.querySelector('.second-poi-image')
+            var cityTwoPoiImageResponse = response.results[0].images[1].source_url;
+            cityTwoPoiImage.setAttribute('src', cityTwoPoiImageResponse);
+
+            
+            // City, third Point of interest    
+            var cityThreePoi = document.querySelector('#third-poi-caption')
+            var cityThreePoiResponse = response.results[0].images[2].caption;
+            cityThreePoi.textContent = cityThreePoiResponse;
+    
+            var cityThreePoiImage = document.querySelector('.third-poi-image')
+            var cityThreePoiImageResponse = response.results[0].images[2].source_url;
+            cityThreePoiImage.setAttribute('src', cityThreePoiImageResponse);
+            
+
+            // City, fourth Point of interest    
+            var cityFourPoi = document.querySelector('#fourth-poi-caption')
+            var cityFourPoiResponse = response.results[0].images[3].caption;
+            cityFourPoi.textContent = cityFourPoiResponse;
+    
+            var cityFourPoiImage = document.querySelector('.fourth-poi-image')
+            var cityFourPoiImageResponse = response.results[0].images[3].source_url;
+            cityFourPoiImage.setAttribute('src', cityFourPoiImageResponse);
+
+
+            // City, fifth Point of interest    
+            var cityFivePoi = document.querySelector('#fifth-poi-caption')
+            var cityFivePoiResponse = response.results[0].images[4].caption;
+            cityFivePoi.textContent = cityFivePoiResponse;
+    
+            var cityFivePoiImage = document.querySelector('.fifth-poi-image')
+            var cityFivePoiImageResponse = response.results[0].images[4].source_url;
+            cityFivePoiImage.setAttribute('src', cityFivePoiImageResponse);
+            
+
+            // City, sixth Point of interest    
+            var citySixPoi = document.querySelector('#sixth-poi-caption')
+            var citySixPoiResponse = response.results[0].images[5].caption;
+            citySixPoi.textContent = citySixPoiResponse;
+    
+            var citySixPoiImage = document.querySelector('.sixth-poi-image')
+            var citySixPoiImageResponse = response.results[0].images[5].source_url;
+            citySixPoiImage.setAttribute('src', citySixPoiImageResponse);
+
+            
+            // City, seventh Point of interest    
+            var citySevenPoi = document.querySelector('#seventh-poi-caption')
+            var citySevenPoiResponse = response.results[0].images[6].caption;
+            citySevenPoi.textContent = citySevenPoiResponse;
+    
+            var citySevenPoiImage = document.querySelector('.seventh-poi-image')
+            var citySevenPoiImageResponse = response.results[0].images[6].source_url;
+            citySevenPoiImage.setAttribute('src', citySevenPoiImageResponse);
+            
+
+            // City, eighth Point of interest    
+            var cityEightPoi = document.querySelector('#eighth-poi-caption')
+            var cityEightPoiResponse = response.results[0].images[7].caption;
+            cityEightPoi.textContent = cityEightPoiResponse;
+    
+            var cityEightPoiImage = document.querySelector('.eighth-poi-image')
+            var cityEightPoiImageResponse = response.results[0].images[7].source_url;
+            cityEightPoiImage.setAttribute('src', cityEightPoiImageResponse);
+
+
+            // City, ninth Point of interest    
+            var cityNinePoi = document.querySelector('#ninth-poi-caption')
+            var cityNinePoiResponse = response.results[0].images[8].caption;
+            cityNinePoi.textContent = cityNinePoiResponse;
+    
+            var cityNinePoiImage = document.querySelector('.ninth-poi-image')
+            var cityNinePoiImageResponse = response.results[0].images[8].source_url;
+            cityNinePoiImage.setAttribute('src', cityNinePoiImageResponse);
+            
+
+            // City, tenth Point of interest    
+            var cityTenPoi = document.querySelector('#tenth-poi-caption')
+            var cityTenPoiResponse = response.results[0].images[9].caption;
+            cityTenPoi.textContent = cityTenPoiResponse;
+    
+            var cityTenPoiImage = document.querySelector('.tenth-poi-image')
+            var cityTenPoiImageResponse = response.results[0].images[9].source_url;
+            cityTenPoiImage.setAttribute('src', cityTenPoiImageResponse);
+            
+            
+        });
+
+
+// Second city function button fetcth reponse and append to webpage
+        cityTwoPoi.addEventListener('click', function(){
+            // City, first Point of interest    
+            var cityOnePoi = document.querySelector('#first-poi-caption')
+            var cityOnePoiResponse = response.results[1].images[0].caption;
+            cityOnePoi.textContent = cityOnePoiResponse;
+    
+            var cityOnePoiImage = document.querySelector('.first-poi-image')
+            var cityOnePoiImageResponse = response.results[1].images[0].source_url;
+            cityOnePoiImage.setAttribute('src', cityOnePoiImageResponse);
+            
+
+            // City, second Point of interest    
+            var cityTwoPoi = document.querySelector('#second-poi-caption')
+            var cityTwoPoiResponse = response.results[1].images[1].caption;
+            cityTwoPoi.textContent = cityTwoPoiResponse;
+    
+            var cityTwoPoiImage = document.querySelector('.second-poi-image')
+            var cityTwoPoiImageResponse = response.results[1].images[1].source_url;
+            cityTwoPoiImage.setAttribute('src', cityTwoPoiImageResponse);
+
+            
+            // City, third Point of interest    
+            var cityThreePoi = document.querySelector('#third-poi-caption')
+            var cityThreePoiResponse = response.results[1].images[2].caption;
+            cityThreePoi.textContent = cityThreePoiResponse;
+    
+            var cityThreePoiImage = document.querySelector('.third-poi-image')
+            var cityThreePoiImageResponse = response.results[1].images[2].source_url;
+            cityThreePoiImage.setAttribute('src', cityThreePoiImageResponse);
+            
+
+            // City, fourth Point of interest    
+            var cityFourPoi = document.querySelector('#fourth-poi-caption')
+            var cityFourPoiResponse = response.results[1].images[3].caption;
+            cityFourPoi.textContent = cityFourPoiResponse;
+    
+            var cityFourPoiImage = document.querySelector('.fourth-poi-image')
+            var cityFourPoiImageResponse = response.results[1].images[3].source_url;
+            cityFourPoiImage.setAttribute('src', cityFourPoiImageResponse);
+
+
+            // City, fifth Point of interest    
+            var cityFivePoi = document.querySelector('#fifth-poi-caption')
+            var cityFivePoiResponse = response.results[1].images[4].caption;
+            cityFivePoi.textContent = cityFivePoiResponse;
+    
+            var cityFivePoiImage = document.querySelector('.fifth-poi-image')
+            var cityFivePoiImageResponse = response.results[1].images[4].source_url;
+            cityFivePoiImage.setAttribute('src', cityFivePoiImageResponse);
+            
+
+            // City, sixth Point of interest    
+            var citySixPoi = document.querySelector('#sixth-poi-caption')
+            var citySixPoiResponse = response.results[1].images[5].caption;
+            citySixPoi.textContent = citySixPoiResponse;
+    
+            var citySixPoiImage = document.querySelector('.sixth-poi-image')
+            var citySixPoiImageResponse = response.results[1].images[5].source_url;
+            citySixPoiImage.setAttribute('src', citySixPoiImageResponse);
+
+            
+            // City, seventh Point of interest    
+            var citySevenPoi = document.querySelector('#seventh-poi-caption')
+            var citySevenPoiResponse = response.results[1].images[6].caption;
+            citySevenPoi.textContent = citySevenPoiResponse;
+    
+            var citySevenPoiImage = document.querySelector('.seventh-poi-image')
+            var citySevenPoiImageResponse = response.results[1].images[6].source_url;
+            citySevenPoiImage.setAttribute('src', citySevenPoiImageResponse);
+            
+
+            // City, eighth Point of interest    
+            var cityEightPoi = document.querySelector('#eighth-poi-caption')
+            var cityEightPoiResponse = response.results[1].images[7].caption;
+            cityEightPoi.textContent = cityEightPoiResponse;
+    
+            var cityEightPoiImage = document.querySelector('.eighth-poi-image')
+            var cityEightPoiImageResponse = response.results[1].images[7].source_url;
+            cityEightPoiImage.setAttribute('src', cityEightPoiImageResponse);
+
+
+            // City, ninth Point of interest    
+            var cityNinePoi = document.querySelector('#ninth-poi-caption')
+            var cityNinePoiResponse = response.results[1].images[8].caption;
+            cityNinePoi.textContent = cityNinePoiResponse;
+    
+            var cityNinePoiImage = document.querySelector('.ninth-poi-image')
+            var cityNinePoiImageResponse = response.results[1].images[8].source_url;
+            cityNinePoiImage.setAttribute('src', cityNinePoiImageResponse);
+            
+
+            // City, tenth Point of interest    
+            var cityTenPoi = document.querySelector('#tenth-poi-caption')
+            var cityTenPoiResponse = response.results[1].images[9].caption;
+            cityTenPoi.textContent = cityTenPoiResponse;
+    
+            var cityTenPoiImage = document.querySelector('.tenth-poi-image')
+            var cityTenPoiImageResponse = response.results[1].images[9].source_url;
+            cityTenPoiImage.setAttribute('src', cityTenPoiImageResponse);
+            
+            
+        });
+
+// Third city function button fetcth reponse and append to webpage
+        cityThreePoi.addEventListener('click', function(){
+            // City, first Point of interest    
+            var cityOnePoi = document.querySelector('#first-poi-caption')
+            var cityOnePoiResponse = response.results[2].images[0].caption;
+            cityOnePoi.textContent = cityOnePoiResponse;
+    
+            var cityOnePoiImage = document.querySelector('.first-poi-image')
+            var cityOnePoiImageResponse = response.results[2].images[0].source_url;
+            cityOnePoiImage.setAttribute('src', cityOnePoiImageResponse);
+            
+
+            // City, second Point of interest    
+            var cityTwoPoi = document.querySelector('#second-poi-caption')
+            var cityTwoPoiResponse = response.results[2].images[1].caption;
+            cityTwoPoi.textContent = cityTwoPoiResponse;
+    
+            var cityTwoPoiImage = document.querySelector('.second-poi-image')
+            var cityTwoPoiImageResponse = response.results[2].images[1].source_url;
+            cityTwoPoiImage.setAttribute('src', cityTwoPoiImageResponse);
+
+            
+            // City, third Point of interest    
+            var cityThreePoi = document.querySelector('#third-poi-caption')
+            var cityThreePoiResponse = response.results[2].images[2].caption;
+            cityThreePoi.textContent = cityThreePoiResponse;
+    
+            var cityThreePoiImage = document.querySelector('.third-poi-image')
+            var cityThreePoiImageResponse = response.results[2].images[2].source_url;
+            cityThreePoiImage.setAttribute('src', cityThreePoiImageResponse);
+            
+
+            // City, fourth Point of interest    
+            var cityFourPoi = document.querySelector('#fourth-poi-caption')
+            var cityFourPoiResponse = response.results[2].images[3].caption;
+            cityFourPoi.textContent = cityFourPoiResponse;
+    
+            var cityFourPoiImage = document.querySelector('.fourth-poi-image')
+            var cityFourPoiImageResponse = response.results[2].images[3].source_url;
+            cityFourPoiImage.setAttribute('src', cityFourPoiImageResponse);
+
+
+            // City, fifth Point of interest    
+            var cityFivePoi = document.querySelector('#fifth-poi-caption')
+            var cityFivePoiResponse = response.results[2].images[4].caption;
+            cityFivePoi.textContent = cityFivePoiResponse;
+    
+            var cityFivePoiImage = document.querySelector('.fifth-poi-image')
+            var cityFivePoiImageResponse = response.results[2].images[4].source_url;
+            cityFivePoiImage.setAttribute('src', cityFivePoiImageResponse);
+            
+
+            // City, sixth Point of interest    
+            var citySixPoi = document.querySelector('#sixth-poi-caption')
+            var citySixPoiResponse = response.results[2].images[5].caption;
+            citySixPoi.textContent = citySixPoiResponse;
+    
+            var citySixPoiImage = document.querySelector('.sixth-poi-image')
+            var citySixPoiImageResponse = response.results[2].images[5].source_url;
+            citySixPoiImage.setAttribute('src', citySixPoiImageResponse);
+
+            
+            // City, seventh Point of interest    
+            var citySevenPoi = document.querySelector('#seventh-poi-caption')
+            var citySevenPoiResponse = response.results[2].images[6].caption;
+            citySevenPoi.textContent = citySevenPoiResponse;
+    
+            var citySevenPoiImage = document.querySelector('.seventh-poi-image')
+            var citySevenPoiImageResponse = response.results[2].images[6].source_url;
+            citySevenPoiImage.setAttribute('src', citySevenPoiImageResponse);
+            
+
+            // City, eighth Point of interest    
+            var cityEightPoi = document.querySelector('#eighth-poi-caption')
+            var cityEightPoiResponse = response.results[2].images[7].caption;
+            cityEightPoi.textContent = cityEightPoiResponse;
+    
+            var cityEightPoiImage = document.querySelector('.eighth-poi-image')
+            var cityEightPoiImageResponse = response.results[2].images[7].source_url;
+            cityEightPoiImage.setAttribute('src', cityEightPoiImageResponse);
+
+
+            // City, ninth Point of interest    
+            var cityNinePoi = document.querySelector('#ninth-poi-caption')
+            var cityNinePoiResponse = response.results[2].images[8].caption;
+            cityNinePoi.textContent = cityNinePoiResponse;
+    
+            var cityNinePoiImage = document.querySelector('.ninth-poi-image')
+            var cityNinePoiImageResponse = response.results[2].images[8].source_url;
+            cityNinePoiImage.setAttribute('src', cityNinePoiImageResponse);
+            
+
+            // City, tenth Point of interest    
+            var cityTenPoi = document.querySelector('#tenth-poi-caption')
+            var cityTenPoiResponse = response.results[2].images[9].caption;
+            cityTenPoi.textContent = cityTenPoiResponse;
+    
+            var cityTenPoiImage = document.querySelector('.tenth-poi-image')
+            var cityTenPoiImageResponse = response.results[2].images[9].source_url;
+            cityTenPoiImage.setAttribute('src', cityTenPoiImageResponse);
+        });
+
+
+
     })
 
 
+   
+     
     // .catch(err => {
     // 	console.error(err);
     // });
@@ -224,19 +548,19 @@ function findCity(event) {
 
 
     // this fetch will find points of interest (food) locations by city name. Hard code search option values into radio buttons that will populate from the country fetch search
-    fetch('https://www.triposo.com/api/20210317/poi.json?location_id=' + citySearch + '&tag_labels=eatingout&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
+    // fetch('https://www.triposo.com/api/20210317/poi.json?location_id=' + citySearch + '&tag_labels=eatingout&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
 
-    .then(function(response) {
-        return response.json();   
-    })
-    .then(function(response) {
-        console.log(response);
+    // .then(function(response) {
+    //     return response.json();   
+    // })
+    // .then(function(response) {
+    //     console.log(response);
 
-    })
+    // })
 
-    .catch(err => {
-        console.error(err);
-    });
+    // .catch(err => {
+    //     console.error(err);
+    // });
 
 };
 
