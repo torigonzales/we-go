@@ -1,7 +1,10 @@
 
 var submitBtn = document.querySelector('.submit');
 
-
+// this creates a variable and states that this is an array for storying multiple values, strings or objects
+var findCountry = []
+// This preserve the array upon refresh, nolonger starting with an empty array from the findCountry = []
+var findCountry = JSON.parse(localStorage.getItem('City')) || [];
 
 // Begin fuction to search for city
 submitBtn.onclick = findCity;
@@ -9,6 +12,27 @@ function findCity(event) {
     event.preventDefault();
     var citySearch = document.querySelector('#search').value
     console.log(citySearch)
+    
+    // We are puhsing the user input search value from city Search into the findCountry array
+    findCountry.push(citySearch)
+    // We are now storing that array variable and all it's values in local storage
+    localStorage.setItem('City', JSON.stringify(findCountry));
+
+    var seventh = findCountry[findCountry.length - 4];
+    var eigth = findCountry[findCountry.length - 3];
+    var ninth = findCountry[findCountry.length - 2];
+    var tenth = findCountry[findCountry.length - 1];
+    var both = [tenth, ninth, eigth, seventh]
+    console.log(ninth);
+    console.log(tenth);
+    console.log(both)
+    console.log(ninth + tenth)
+    
+
+
+
+    // This is the re-array if select indexes from last to count down position
+    localStorage.setItem('Key', JSON.stringify(both));
 
     // this fetch searches by country or cities. Searching by country find attribute captical of country - for a map view with wiki articles and images of laction.  Searching by city will list suburbes and list out images
     fetch('https://www.triposo.com/api/20210317/location.json?part_of=' + citySearch + '&account=6OIHILXY&token=cd6hxbcw7b7ujjuv48p0pjiqo5bb2zp3')
@@ -162,37 +186,34 @@ function findCity(event) {
         secondRadio.textContent = response.results[1].id;
         
 
-        // thirdRadio = document.querySelector('#three')
-        // thirdRadio.textContent = response.results[2].name;
+        thirdRadio = document.querySelector('#three')
+        thirdRadio.textContent = response.results[2].name;
         
 
-        // forthRadio = document.querySelector('#four')
-        // forthRadio.textContent = response.results[3].name;
+        forthRadio = document.querySelector('#four')
+        forthRadio.textContent = response.results[3].name;
 
-        // fifthRadio = document.querySelector('#five')
-        // fifthRadio.textContent = response.results[4].name;
+        fifthRadio = document.querySelector('#five')
+        fifthRadio.textContent = response.results[4].name;
         
 
-        // sixthRadio = document.querySelector('#six')
-        // sixthRadio.textContent = response.results[5].name;
+        sixthRadio = document.querySelector('#six')
+        sixthRadio.textContent = response.results[5].name;
         
 
-        // seventhRadio = document.querySelector('#seven')
-        // seventhRadio.textContent = response.results[6].name;
+        seventhRadio = document.querySelector('#seven')
+        seventhRadio.textContent = response.results[6].name;
         
 
-        // eighthRadio = document.querySelector('#eight')
-        // eighthRadio.textContent = response.results[7].name;
+        eighthRadio = document.querySelector('#eight')
+        eighthRadio.textContent = response.results[7].name;
 
-        // ninthRadio = document.querySelector('#nine')
-        // ninthRadio.textContent = response.results[8].name;
+        ninthRadio = document.querySelector('#nine')
+        ninthRadio.textContent = response.results[8].name;
         
 
-        // tenthRadio = document.querySelector('#ten')
-        // tenthRadio.textContent = response.results[9].name;
-
-
-
+        tenthRadio = document.querySelector('#ten')
+        tenthRadio.textContent = response.results[9].name;
     })
 
 
