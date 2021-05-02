@@ -5,6 +5,12 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.selection-header {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
 .submit {
     font-size: 25px;
     background-color: #C7EBF0;
@@ -14,45 +20,22 @@
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
 
-.tourism-criteria {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    border-top: 3px solid black;
-    border-radius: 10px;
-    border-bottom: 3px solid black;
-}
-
-.tourism-options-header {
- 
-}
-
-.navigation {
-    border: 2px solid black;
-    margin-right: 10px;
+.city-submit {
+    font-size: 15px;
+    background-color: #f39c6b;
     border-radius: 7px;
+    margin-top: 10px;
+    border: black 1px solid;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+    color: black;
 }
+
 /* End navigation styles */
 
 /* Feature box styles */
-.features {
-    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: none;
-   
 
-}
 
-.spacing {
-    border: 2px black solid;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 7px;
-}
+
 /* End Feature box styles */
 
 .tour-header {
@@ -109,10 +92,6 @@
 
 }
 
-.box-shadows-nav{
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
-}
-
 .header {
     font-size: 100px;
     font-style: italic;
@@ -132,16 +111,21 @@
 .text-styles-primary{
     font-size: 26px;
     text-align: center;
-    border-bottom: 2px solid black;
-    text-align: center;
+    color: orange;
+
 }
 
 .text-styles-secondary{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    
+    
 
 }
 
 .shadows-primary{
-
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
 
 .shadows-secondary{
