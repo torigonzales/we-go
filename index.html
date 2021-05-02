@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
     <header>
-      <h1 class="title">
-        You had me at, Hello!
+      <h1 class="header">
+        We - Go!
       </h1>
 </header>
 
-
-<main class="body">
+<main class="flex-direction-row padding-small background-color-primary">
 
   <!-- Navigation section and nav header -->
-  <section class="container navigation column is-one-fifth">
-    <h1 class="column is-12 search-header">Enter Country Destination!</h1>
+  <section class="navigation column is-one-fifth">
+    <h1 class="column is-12 search-header">Select a Country!</h1>
 
     <!-- Search form and submit botton -->
     <form class="searchForm column is-full">
 
-    <select id="search" class="search column is-full" placeholder="Enter Destination">
+    <select class="column is-full border-box-secondary" placeholder="Enter Destination" class="text-styles-primary">
       <option >Select a Country</option>
       <option value="Brazil">Brazil</option>
       <option value="Egypt">Egypt</option>
@@ -38,14 +37,14 @@
 
     </select>
     <button class="submit column is-full submitBtn">
-      <text>Begin Your Search</text>
+      <text>Search</text>
     </button>
     </form>
 
     <!-- section for criteria options for tourism search features -->
     <div class="column is-full tourism-criteria">
-      <div class="tourism-options-header column is-full">Select Your Criteria!</div>
-        <div class="column is-12 body">
+      <div class="tourism-options-header column is-full">Pick a City!</div>
+        <div class="column is-12 flex-direction-row padding-small">
           <button id="one" class="column is-half">button</button>
 
           <button id="two" class="column is-half">button</button>
@@ -74,7 +73,7 @@
   <!-- API features sections to unload content into the webpage -->
   <section class="features column">
     <!-- Country info links and images -->
-    <aside class="features spacing tourism column is-full city-buttons">
+    <aside class="features spacing tourism column is-full city-buttons ">
 
       <div class="column is-one-fifth">
         <h1 id="city-one-name"></h1>
@@ -191,9 +190,8 @@
       </div>
     </aside>
 
-
     <!-- aiidtional tourism points of interest contect -->
-    <div class="features spacing poi column is-6">
+    <!-- <div class="features spacing poi column is-6">
               <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dicta quia eius optio laudantium! Illo harum totam laboriosam iusto fugiat magnam molestiae voluptates cupiditate? Nisi dolorum atque rerum obcaecati nostrum!
       </p>
@@ -209,10 +207,10 @@
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dicta quia eius optio laudantium! Illo harum totam laboriosam iusto fugiat magnam molestiae voluptates cupiditate? Nisi dolorum atque rerum obcaecati nostrum!
       </p>
-    </div>
+    </div> -->
 
     <!-- weather features contect and forecaster -->
-    <div class="features spacing weather column is-auto">
+    <!-- <div class="features spacing weather column is-auto">
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dicta quia eius optio laudantium! Illo harum totam laboriosam iusto fugiat magnam molestiae voluptates cupiditate? Nisi dolorum atque rerum obcaecati nostrum!
       </p>
@@ -225,7 +223,7 @@
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dicta quia eius optio laudantium! Illo harum totam laboriosam iusto fugiat magnam molestiae voluptates cupiditate? Nisi dolorum atque rerum obcaecati nostrum!
       </p>
-    </div>
+    </div> -->
   </section>
 
   <script src="./assets/js/navigation.js"></script>

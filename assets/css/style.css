@@ -5,58 +5,9 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Start styles for header */
-.body{ 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 5px;
-    justify-content: center;
-    background: rgb(250, 235, 224);
-}
-
-.title {
-    font-size: 100px;
-    font-style: italic;
-    background: linear-gradient(70deg, black, orange,black,red, black);
-    text-align: center;
-}
-/* end styles for header */
-
-/* start navigation stiles */
-
-.nav {
-    position: sticky;
-    top: 0;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-#searchForm {
-    padding: 5px;
-}
-
-.search-header {
-    font-size: 26px;
-    text-align: center;
-}
-
-.searchForm {
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    border-radius: 10px;
-}
-
-.search {
-    font-size: 25px;
-    border-radius: 7px;
-    border: grey 1px dotted;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
-}
-
 .submit {
     font-size: 25px;
-    background-color: cyan;
+    background-color: #C7EBF0;
     border-radius: 7px;
     margin-top: 10px;
     border: black 1px none;
@@ -73,9 +24,7 @@
 }
 
 .tourism-options-header {
-    font-size: 26px;
-    text-align: center;
-    border-bottom: 2px solid black;
+ 
 }
 
 .navigation {
@@ -88,13 +37,13 @@
 
 /* Feature box styles */
 .features {
-    border: 2px black solid;
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     padding: none;
-    border-radius: 7px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+   
+
 }
 
 .spacing {
@@ -113,3 +62,91 @@
     font: bold;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
 }
+
+/* start functional styles */
+
+.flex-direction-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.padding-small{
+    padding: 5px;
+    
+}
+
+.margin-medium{
+    margin: 15px;
+}
+
+/* start design styles */
+
+.background-color-primary{
+    background-color: #F7F7F2;
+}
+
+.background-color-secondary{
+    background-color: purple;
+}
+
+.border-box-primary{
+    border-radius: 7px;
+    border: 2px black solid;
+
+}
+
+.border-box-secondary{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    border-radius: 7px;
+    border: grey 1px dotted;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+
+}
+
+.box-shadows-nav{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+}
+
+.header {
+    font-size: 100px;
+    font-style: italic;
+    color: #fff;
+    background: linear-gradient(70deg, #8EE3EF, #AEF3E7, #E89005, #EC7505);
+    text-align: center;
+}
+
+.text-color-primary{
+
+}
+
+.text-color-secondary{
+
+}
+
+.text-styles-primary{
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.text-styles-secondary{
+
+}
+
+.shadows-primary{
+
+}
+
+.shadows-secondary{
+
+}
+
+
+
